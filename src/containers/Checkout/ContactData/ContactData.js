@@ -33,7 +33,7 @@ class ContactData extends Component {
             },
             deliveryMethod: 'fastest'
         }
-        axios.post( '/orders.json', order )
+        axios.post( 'https://burgerapplication-ff293.firebaseio.com/orders', order )
             .then( response => {
                 this.setState( { loading: false } );
                 this.props.history.push('/');

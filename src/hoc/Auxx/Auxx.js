@@ -1,9 +1,7 @@
 import React from 'react';
 
-const Auxx = (props) =>{
-    
-        {props.children};
-   
-}
+const Auxx = (props) =>(
+       <div>{props.children}</div>
+);
 
 export default Auxx;
